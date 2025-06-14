@@ -14,6 +14,7 @@ class StoreViewModel with ChangeNotifier {
   StoreModel? get selectedStore => _selectedStore;
 
   Future<void> loadStore() async {
+
     _isLoading = true;
     notifyListeners();
 
